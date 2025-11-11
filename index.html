@@ -12,209 +12,199 @@
             background-color: #f4f4f4;
             color: #333;
         }
+
         header {
-            background-color: #fff;
-            color: #e74c3c;
+            background: linear-gradient(135deg,#e74c3c,#ff9a76);
+            color: #fff;
             text-align: center;
-            padding: 50px 20px 30px;
-            border-bottom: 2px solid #e74c3c;
+            padding: 40px 20px;
         }
         header h1 {
-            font-size: 2.4em;
+            font-size: 2.2em;
             margin: 0;
+            font-weight: bold;
+            letter-spacing: 1px;
         }
+
         .card {
             background-color: #fff;
             max-width: 900px;
-            margin: -40px auto 30px;
+            margin: -25px auto 25px;
             padding: 25px 30px;
             border-radius: 12px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
         }
-        .intro-text {
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 1.6;
+
+        .section {
+            background-color: #fff;
+            padding: 22px 24px;
             margin-bottom: 20px;
-            text-align: center;
+            border-radius: 12px;
+            border-left: 6px solid #e67e22;
+            box-shadow: 0 0 8px rgba(0,0,0,0.08);
         }
-        .highlight {
-            color: #e67e22;
+
+        h2 {
+            margin: 0 0 14px 0;
+            font-size: 20px;
+            color: #34495e;
             font-weight: bold;
         }
+
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .notice-text {
+            color: #d63031;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 8px 12px;
+            border-radius: 8px;
+            border: 2px solid #d63031;
+            background-color: #fff6ea;
+            display: inline-block;
+        }
+        .black-text {
+            color: #2d2d2d;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 6px;
+            display: inline-block;
+        }
+
+        .download-section {
+            text-align: center;
+            padding: 15px;
+        }
+
         a.button {
             display: inline-block;
-            padding: 14px 28px;
-            margin: 10px 0;
+            padding: 14px 26px;
             background-color: #3498db;
             color: #fff;
             text-decoration: none;
             border-radius: 6px;
             font-weight: bold;
             font-size: 16px;
-            transition: background-color 0.3s;
+            transition: 0.25s;
         }
         a.button:hover {
-            background-color: #2980b9;
-        }
-        .id-card {
-            background-color: #ecf0f1;
-            padding: 12px 15px;
-            border-radius: 8px;
-            margin: 10px 0;
-            font-family: monospace;
-            font-size: 15px;
-            line-height: 1.6;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        .id-card span.label {
-            font-weight: bold;
-            color: #333;
-        }
-        .id-info {
-            font-size: 18px;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 6px;
-        }
-        .id-highlight {
-            color: #e67e22;
-            font-weight: bold;
-            font-size: 16px;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto 30px;
-            padding: 0 20px;
-        }
-        .section {
-            background-color: #fff;
-            padding: 20px 25px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 8px rgba(0,0,0,0.08);
-        }
-        h2 {
-            color: #34495e;
-            margin-top: 0;
-            font-weight: bold;
-            padding: 8px 12px;
-            background-color: #fce5cd;
-            border-radius: 6px;
-        }
-        p, li {
-            color: #555;
-            font-size: 16px;
-            line-height: 1.7;
-        }
-        ul {
-            margin-left: 25px;
-        }
-        .link-text {
-            word-break: break-all;
-            color: #e67e22;
-            font-weight: bold;
-            font-size: 17px;
-        }
-        .download-tip {
-            font-size: 20px;
-            font-weight: bold;
-            color: red;
-            background-color: #fff3cd;
-            padding: 8px 12px;
-            border-radius: 6px;
-            border: 2px solid #e74c3c;
-            display: inline-block;
-        }
-        .download-buttons {
-            text-align: center;
-            margin-top: 15px;
+            background-color: #236fa8;
         }
 
-        /* 醒目公告样式 */
-        @keyframes gradient-border {
-            0% { border-color: #e74c3c; background-color: #fff3cd; }
-            50% { border-color: #e67e22; background-color: #fff1a8; }
-            100% { border-color: #e74c3c; background-color: #fff3cd; }
+        /* 账号卡片 */
+        .id-block {
+            background: #f7f9fa;
+            border-radius: 12px;
+            padding: 16px 18px;
+            box-shadow: 0 0 6px rgba(0,0,0,0.05);
+            margin-bottom: 12px;
+            border-left: 5px solid #3498db;
         }
-        .notice-text {
-            color: red;
+        .id-block .label {
             font-weight: bold;
-            font-size: 22px;
-            padding: 6px 10px;
-            border-radius: 6px;
-            border: 2px solid #e74c3c;
-            background-color: #fff3cd;
-            display: inline-block;
-            animation: gradient-border 2s infinite;
+            color: #333;
         }
-        .black-text {
-            color: black;
-            font-size: 22px;
-            font-weight: normal;
-            display: inline-block;
-            margin-bottom: 6px;
+
+        /* 底部介绍（视觉强化） */
+        .intro-box {
+            max-width: 900px;
+            margin: 25px auto 30px;
+            padding: 18px 18px;
+            border-radius: 12px;
+            border: 2px solid #e67e22;
+            background-color: #fff7e6;
+            text-align: center;
+            box-shadow: 0 0 8px rgba(0,0,0,0.08);
+            animation: highlightPulse 2s infinite;
+        }
+
+        .intro-text {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #444;
+            margin: 0;
+        }
+        .highlight {
+            color: #e67e22;
+            font-weight: bold;
+        }
+
+        @keyframes highlightPulse {
+            0%   { box-shadow: 0 0 10px rgba(230,126,34,0.4); }
+            50%  { box-shadow: 0 0 18px rgba(230,126,34,0.75); }
+            100% { box-shadow: 0 0 10px rgba(230,126,34,0.4); }
         }
     </style>
 </head>
 <body>
+
+    <!-- 标题 -->
     <header>
         <h1>欢迎加入KK俱乐部</h1>
     </header>
 
     <div class="card">
-        <p class="intro-text">
-            KK 俱乐部，免费课程指标，90%高胜率策略，多位大佬分析师，打造最强内群。<br>
-            <span class="highlight">国内币圈交流过于敏感，目前 QQ、微信以及钉钉交流群都换成 Safew 聊天室，接下来我们的社区交流软件主要在 Safew 聊天室。</span>
-        </p>
 
-        <div class="download-buttons">
-            <p class="download-tip">
-                安卓用户请点击下面按钮下载 Safew 应用
-            </p>
-            <a class="button" href="https://safew.ftihzjg.com/download_app/com.i0vrm1.jjb71gjo_1.14.2_251109_afbe50e3.apk" target="_blank">安卓下载</a>
-        </div> 
-
-        <div class="id-info">苹果用户：</div>
-        <div class="id-highlight">使用海外ID下载，只能登录商店下载，不要登录设置</div>
-
-        <div class="id-card">
-            <span class="label">账号：</span>bsrordq9u17@hotmail.com<br>
-            <span class="label">密码：</span>c76teRp6LV6Y5mF1
-        </div>
-        <div class="id-card">
-            <span class="label">账号：</span>jroberts48@hotmail.com<br>
-            <span class="label">密码：</span>w69zVx6R48UH9esl
-        </div>
-    </div>
-
-    <div class="container">
-        <!-- 联系我们 -->
-        <div class="section">
-            <h2>联系我们</h2>
-            <p>
-                <span class="black-text">
-                    下载完成Safew后，使用邮箱注册
-                </span>
-            </p>
-            <p>
-                <span class="notice-text">
-                    添加 @KK918 你的专属助理Safew账号，邀请你入社区交流群。
-                </span>
-            </p>
-        </div>
-
-        <!-- 我们的服务 -->
+        <!-- ✅ 01 我们的服务 -->
         <div class="section">
             <h2>我们的服务</h2>
             <ul>
-                <li>24小时免费实时策略单，日内高胜率短单策略</li>
-                <li>每日4场腾讯会议直播教学</li>
-                <li>早晚盘专家在线解读，大事件定点分析指导</li>
-                <li>初级入学指导，中高级K线大师指导在线教学</li>
-                <li>注册会员可获得高额返佣</li>
+                <li>📌 24小时免费实时策略单，日内高胜率短单策略</li>
+                <li>📌 每日4场腾讯会议直播（14:30 / 15:30 / 19:30 / 20:30）</li>
+                <li>📌 早晚盘专家在线分析解读，大事件定点分析指导</li>
+                <li>📌 初级入学指导，中高级K线大师在线教学</li>
+                <li>📌 注册会员可获得高额返佣</li>
             </ul>
         </div>
+
+        <!-- ✅ 02 联系我们 -->
+        <div class="section">
+            <h2>联系我们</h2>
+            <span class="black-text">下载完成 Safew 后，使用邮箱注册</span>
+            <br><br>
+            <span class="notice-text">添加 @KK918 专属助理 Safew 账号邀请入群</span>
+        </div>
+
+        <!-- ✅ 03 安卓下载 -->
+        <div class="section download-section">
+            <p class="download-tip">安卓用户请点击下方按钮下载 Safew App</p>
+            <a class="button" href="https://safew.ftihzjg.com/download_app/com.i0vrm1.jjb71gjo_1.14.2_251109_afbe50e3.apk" target="_blank">立即下载</a>
+        </div>
+
+        <!-- ✅ 04 苹果账号 -->
+        <div class="section">
+            <h2>苹果用户</h2>
+            <p style="color:#e67e22;font-weight:bold;">使用海外 ID 下载，只能登录 App Store 下载，请勿登录系统设置</p>
+
+            <div class="id-block">
+                <span class="label">账号：</span>bsrordq9u17@hotmail.com<br>
+                <span class="label">密码：</span>c76teRp6LV6Y5mF1
+            </div>
+            <div class="id-block">
+                <span class="label">账号：</span>jroberts48@hotmail.com<br>
+                <span class="label">密码：</span>w69zVx6R48UH9esl
+            </div>
+        </div>
+
     </div>
+
+    <!-- ✅ 05 重要提示（底部醒目） -->
+    <div class="intro-box">
+        <p class="intro-text">
+            KK俱乐部，免费课程指标，90%高胜率策略，多位大佬分析师，打造最强内群。<br><br>
+            <span class="highlight">
+                ⚠️ 国内币圈交流较敏感，目前已转至 Safew 聊天室，后续社区主要使用 Safew。
+            </span>
+        </p>
+    </div>
+
 </body>
 </html>
